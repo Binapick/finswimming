@@ -4,7 +4,7 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [24.06.2016 09:17:57] -->
+  <!-- phpDesigner :: Timestamp [24.06.2016 09:52:47] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -44,7 +44,6 @@ function HTML_Header(){
     		<link href=\"assets/css/color_scheme/default.css\" rel=\"stylesheet\" type=\"text/css\" id=\"color_scheme\" />\n
     	</head>\n
     	<body class=\"smoothscroll enable-animation\">\n
-
     ";
   return $z;
 }
