@@ -4,7 +4,7 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [24.06.2016 09:52:47] -->
+  <!-- phpDesigner :: Timestamp [25.06.2016 16:41:55] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -54,12 +54,14 @@ function HTML_Bottom(){
     		<script type=\"text/javascript\">var plugin_path = 'assets/plugins/';</script>\n
     		<script type=\"text/javascript\" src=\"assets/plugins/jquery/jquery-2.1.4.min.js\"></script>\n
     
-    		<script type=\"text/javascript\" src=\"assets/js/scripts.js\"></script>\n
-    		
     		<!-- REVOLUTION SLIDER -->\n
-    		<script type=\"text/javascript\" src=\"assets/plugins/slider.revolution.v5/js/jquery.themepunch.tools.min.js\"></script>\n
-    		<script type=\"text/javascript\" src=\"assets/plugins/slider.revolution.v5/js/jquery.themepunch.revolution.min.js\"></script>\n
-    		<script type=\"text/javascript\" src=\"assets/js/frontend.slider.js\"></script>\n
+    		<script type=\"text/javascript\" src=\"assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js\"></script>\n
+    		<script type=\"text/javascript\" src=\"assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js\"></script>\n
+    		<script type=\"text/javascript\" src=\"assets/js/revolution_slider.js\"></script>\n
+
+        <!-- SCRIPTS -->
+        <script type=\"text/javascript\" src=\"assets/js/scripts.js\"></script>\n
+    		
     	</body>\n
     </html>\n";
   return $z;
