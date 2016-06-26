@@ -4,20 +4,23 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [25.06.2016 17:25:31] -->
+  <!-- phpDesigner :: Timestamp [26.06.2016 12:52:28] -->
   ------HoC------
  ----------------------------------------------------*/
 ini_set("display_errors",1);
 error_reporting(E_ALL|E_STRICT);
+(isset($_GET["l"]))? $language = $_GET["l"] : $language = "en";
 
 include_once("./assets/lib/fu_html.inc");
+include_once("./assets/lib/".$language."_lang.inc");
 include("./frontend/top_menus.inc");
 include("./frontend/sliders.inc");
 
 $o  = HTML_Header();
 
-$o .= "<div id=\"wrapper\">\n
-        <div id=\"header\" class=\"sticky header-md clearfix\">\n";
+$o .= "<div id=\"wrapper\">\n";
+$o .= getTopBar($language);
+$o .= "   <div id=\"header\" class=\"sticky header-md clearfix\">\n";
 
 
 $o .= "	<!-- TOP NAV -->\n

@@ -4,7 +4,7 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [25.06.2016 16:41:55] -->
+  <!-- phpDesigner :: Timestamp [26.06.2016 11:26:55] -->
   ------HoC------
  ----------------------------------------------------*/
 

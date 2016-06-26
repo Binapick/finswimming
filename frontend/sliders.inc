@@ -4,9 +4,10 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [25.06.2016 18:46:53] -->
+  <!-- phpDesigner :: Timestamp [26.06.2016 13:14:38] -->
   ------HoC------
  ----------------------------------------------------*/
+// TODO: setup to new slider revolution Version
 
 function getRevolutionSlider(){
   $z = "
@@ -51,7 +52,7 @@ function getRevolutionSlider(){
 								data-endelementdelay=\"0.1\"
 								data-endspeed=\"1000\"
 								data-endeasing=\"Power4.easeIn\" style=\"z-index: 10;\">\n
-								Tauchsprtverband Österreich
+								Tauchsportverband Österreich
 							</div>\n
 
 							<div class=\"tp-caption customin ltl tp-resizeme small_light_white font-lato\"
@@ -113,7 +114,7 @@ function getRevolutionSlider(){
 							</div>\n
 
 							<div class=\"tp-caption medium_light_white lfb ltt tp-resizeme\"
-								data-x=\"right\" data-hoffset=\"-110\"
+								data-x=\"left\" data-hoffset=\"350\"
 								data-y=\"center\" data-voffset=\"10\"
 								data-speed=\"600\"
 								data-start=\"900\"
@@ -126,7 +127,7 @@ function getRevolutionSlider(){
 								data-endeasing=\"Power4.easeIn\">\n
 								The Live Timing Portal for swimming<br/>\n
 								and Finswimming.<br/>\n
-								<span style=\"font-size:24px;font-weight:400;\">&ndash; Pat Conroy</span>\n
+								<span style=\"font-size:24px;font-weight:400;\">www.a-timing.wien</span>\n
 							</div>\n
 
 						</li>\n
