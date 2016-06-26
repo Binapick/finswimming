@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [26.06.2016 13:28:27] -->
+  <!-- phpDesigner :: Timestamp [26.06.2016 16:57:55] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -34,7 +34,6 @@ function getTopBar($l="en"){
 						<ul class=\"dropdown-menu pull-right\">
 							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-bookmark\"></i> ".$GLOBALS["top_bar_profile"]."</a></li>
 							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-edit\"></i> ".$GLOBALS["top_bar_competition"]."</a></li>
-							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-cog\"></i> MY SETTINGS</a></li>
 							<li class=\"divider\"></li>
 							<li><a tabindex=\"-1\" href=\"#\"><i class=\"glyphicon glyphicon-off\"></i> ".$GLOBALS["top_bar_logout"]."</a></li>
 						</ul>
@@ -43,7 +42,7 @@ function getTopBar($l="en"){
 
 					<!-- left -->
 					<ul class=\"top-links list-inline\">
-						<li class=\"hidden-xs\"><a href=\"page-contact-1.html\">".$GLOBALS["top_bar_contact"]."</a></li>
+						<li class=\"hidden-xs\"><a href=\"index.php?l=".$l."&mo=con\">".$GLOBALS["top_bar_contact"]."</a></li>
 						<li>";
   if($l == "en"){ 
     $z .= "
