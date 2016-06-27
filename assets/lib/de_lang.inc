@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [27.06.2016 09:36:01] -->
+  <!-- phpDesigner :: Timestamp [27.06.2016 17:18:29] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -19,6 +19,8 @@ $top_bar_profile = "Mein Profil";
 $top_bar_logout = "Ausloggen";
 $top_bar_login = "Anmeldung";
 $top_bar_competition = "Meine Veranstaltungen";
+
+$footer["copyright"] = "Alle Rechte vorbehalten";
 
 $contact["header"] = "Schreiben Sie uns ein paar Zeilen oder sagen Sie nur, <strong><em>Hallo!</em></strong>";
 $contact["fullname"] = "vollständiger Name";

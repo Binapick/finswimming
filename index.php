@@ -4,7 +4,7 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [26.06.2016 17:09:53] -->
+  <!-- phpDesigner :: Timestamp [27.06.2016 17:11:49] -->
   ------HoC------
  ----------------------------------------------------*/
 ini_set("display_errors",1);
@@ -50,10 +50,10 @@ $o .= getRevolutionSlider();
 if($mo == "con"){ $o .= include("/frontend/mo_contact.inc"); }
 
 
-
+$o .= include("/frontend/footer.inc");
 
 $o .= "</div>\n";
 
-$o .= HTML_Bottom();
+$o .= HTML_Bottom($mo);
 print $o;
 ?>

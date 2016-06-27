@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [27.06.2016 10:10:46] -->
+  <!-- phpDesigner :: Timestamp [27.06.2016 16:55:23] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -114,6 +114,20 @@ $z .= "
 
         </div>
 				<!-- /FORM -->
+
+        <!-- INFO -->
+				<div class=\"col-md-4 col-sm-4\">
+					<h2>Visit Us</h2>
+  					<div id=\"map2\" class=\"height-400 grayscale\"></div>
+						<hr />
+						<p>
+							<span class=\"block\"><strong><i class=\"fa fa-map-marker\"></i> Address:</strong> Slamastraße 23, Obj. 3, 1230 Wien, Austria</span>
+							<span class=\"block\"><strong><i class=\"fa fa-phone\"></i> Phone:</strong> <a href=\"tel:+43 664 466 2112\">+43 664 466 2112</a></span>
+							<span class=\"block\"><strong><i class=\"fa fa-envelope\"></i> Email:</strong> <a href=\"mailto:office@tsvoe.at\">office@tsvoe.at</a></span>
+						</p>
+
+					</div>
+					<!-- /INFO -->
 
       </div>
 		</div>

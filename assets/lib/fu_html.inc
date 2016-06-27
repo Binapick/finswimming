@@ -4,7 +4,7 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [27.06.2016 10:33:47] -->
+  <!-- phpDesigner :: Timestamp [27.06.2016 17:21:02] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -63,8 +63,13 @@ function HTML_Bottom($mo = ""){
         <script type=\"text/javascript\" src=\"assets/js/scripts.js\"></script>\n";
   if($mo == "con"){
     $z .= "
-    		<!-- PAGELEVEL SCRIPTS -->
-    		<script type=\"text/javascript\" src=\"assets/js/contact.js\"></script>\n";
+    		<!-- PAGELEVEL SCRIPTS -->\n
+    		<script type=\"text/javascript\" src=\"assets/js/contact.js\"></script>\n
+    		
+        <!-- GMAP.JS -->
+		    <script type=\"text/javascript\" src=\"//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY\"></script>
+		    <script type=\"text/javascript\" src=\"assets/plugins/gmaps.js\"></script>\n
+        <script type=\"text/javascript\" src=\"assets/js/tsvoe.gmaps.js\"></script>\n";
   }
   $z.= "  		
     	</body>\n
