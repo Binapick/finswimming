@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [26.06.2016 17:54:47] -->
+  <!-- phpDesigner :: Timestamp [27.06.2016 10:10:46] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -30,39 +30,40 @@ $z .= "
   		<div class=\"row\">\n
 		    <!-- FORM -->\n
 				<div class=\"col-md-8 col-sm-8\">\n
-          <h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+          <h3>".$contact["header"]."</h3>
 					<!-- Alert Success -->
 					<div id=\"alert_success\" class=\"alert alert-success margin-bottom-30\">
-						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>
-						<strong>Thank You!</strong> Your message successfully sent!
+						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>"
+						.$contact["successfull"]."
 					</div><!-- /Alert Success -->
 
 					<!-- Alert Failed -->
 					<div id=\"alert_failed\" class=\"alert alert-danger margin-bottom-30\">
-						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>
-						<strong>[SMTP] Error!</strong> Internal server error!
+						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>"
+						.$contact["error"]."
 					</div><!-- /Alert Failed -->
 
 					<!-- Alert Mandatory -->
 					<div id=\"alert_mandatory\" class=\"alert alert-danger margin-bottom-30\">
-						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>
-						<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+						<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>"
+						.$contact["sorry"]."
 					</div><!-- /Alert Mandatory -->
-					<form action=\"assets/lib/php/contact.php\" method=\"post\" enctype=\"multipart/form-data\">
+
+					<form action=\"assets/lib/php/contact.php?l=".$language."\" method=\"post\" enctype=\"multipart/form-data\">
 				    <fieldset>
 						  <input type=\"hidden\" name=\"action\" value=\"contact_send\" />
 							<div class=\"row\">
 								<div class=\"form-group\">
 									<div class=\"col-md-4\">
-										<label for=\"contact:name\">Full Name *</label>
+										<label for=\"contact:name\">".$contact["fullname"]." *</label>
 										<input required type=\"text\" value=\"\" class=\"form-control\" name=\"contact[name][required]\" id=\"contact:name\">
 									</div>
 									<div class=\"col-md-4\">
-										<label for=\"contact:email\">E-mail Address *</label>
+										<label for=\"contact:email\">".$contact["email"]." *</label>
 										<input required type=\"email\" value=\"\" class=\"form-control\" name=\"contact[email][required]\" id=\"contact:email\">
 									</div>
 									<div class=\"col-md-4\">
-										<label for=\"contact:phone\">Phone</label>
+										<label for=\"contact:phone\">".$contact["phone"]."</label>
 										<input type=\"text\" value=\"\" class=\"form-control\" name=\"contact[phone]\" id=\"contact:phone\">
 									</div>
 								</div>
@@ -70,11 +71,11 @@ $z .= "
 							<div class=\"row\">
 								<div class=\"form-group\">
 									<div class=\"col-md-8\">
-										<label for=\"contact:subject\">Subject *</label>
+										<label for=\"contact:subject\">".$contact["subject"]." *</label>
 										<input required type=\"text\" value=\"\" class=\"form-control\" name=\"contact[subject][required]\" id=\"contact:subject\">
 									</div>
 									<div class=\"col-md-4\">
-										<label for=\"contact_department\">Department</label>
+										<label for=\"contact_department\">".$contact["divisional"]."</label>
 										<select class=\"form-control pointer\" name=\"contact[department]\">
 											<option value=\"\">--- Select ---</option>
 											<option value=\"Eventmanager\">Eventmanager</option>
@@ -87,7 +88,7 @@ $z .= "
 							<div class=\"row\">
 								<div class=\"form-group\">
 									<div class=\"col-md-12\">
-										<label for=\"contact:message\">Message *</label>
+										<label for=\"contact:message\">".$contact["message"]." *</label>
 										<textarea required maxlength=\"10000\" rows=\"8\" class=\"form-control\" name=\"contact[message]\" id=\"contact:message\"></textarea>
 									</div>
 								</div>
@@ -95,18 +96,18 @@ $z .= "
 							<div class=\"row\">
 								<div class=\"form-group\">
 									<div class=\"col-md-12\">
-										<label for=\"contact:attachment\">File Attachment</label>
+										<label for=\"contact:attachment\">".$contact["file"]."</label>
 
 										<!-- custom file upload -->
-										<input class=\"custom-file-upload\" type=\"file\" id=\"file\" name=\"contact[attachment]\" id=\"contact:attachment\" data-btn-text=\"Select a File\" />
-										<small class=\"text-muted block\">Max file size: 10Mb (zip/pdf/jpg/png/lxf)</small>
+										<input class=\"custom-file-upload\" type=\"file\" id=\"file\" name=\"contact[attachment]\" id=\"contact:attachment\" data-btn-text=\"".$contact["select"]."\" />
+										<small class=\"text-muted block\">".$contact["maxfilesize"].": 10Mb (zip/pdf/jpg/png/lxf)</small>
 									</div>
 								</div>
 							</div>
             </fieldset>
 						<div class=\"row\">
 						  <div class=\"col-md-12\">
-					      <button type=\"submit\" class=\"btn btn-primary\"><i class=\"fa fa-check\"></i> SEND MESSAGE</button>
+					      <button type=\"submit\" class=\"btn btn-primary\"><i class=\"fa fa-check\"></i> ".$contact["send"]."</button>
 						  </div>
 						</div>
           </form>

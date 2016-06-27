@@ -190,6 +190,7 @@
 
 
 			$m = new PHPMailer();
+      $m->setLanguage($_GET["l"], '');
 			$m->IsSMTP();
 			$m->SMTPDebug  	= false;					// enables SMTP debug information (for testing) [default: 2]
 			$m->SMTPAuth   	= true;						// enable SMTP authentication

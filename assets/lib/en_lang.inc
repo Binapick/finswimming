@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [26.06.2016 13:27:51] -->
+  <!-- phpDesigner :: Timestamp [27.06.2016 09:36:00] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -19,4 +19,21 @@ $top_bar_profile = "My Profile";
 $top_bar_logout = "Logout";
 $top_bar_login = "Login";
 $top_bar_competition = "My event";
+
+$contact["header"] = "Write us a line or just say <strong><em>Hello!</em></strong>";
+$contact["fullname"] = "Full Name";
+$contact["email"] = "E-mail Address";
+$contact["phone"] = "Phone";
+$contact["subject"] = "Subject";
+$contact["divisional"] = "Divisional";
+$contact["message"] = "Message";
+$contact["file"] = "File Attachment";
+$contact["send"] = "SEND MESSAGE";
+$contact["select"] = "Select a File";
+$contact["maxfilesize"] = "Max. File size";
+$contact["successfull"] = "<strong>Thank You!</strong> Your message successfully sent!";
+$contact["error"] = "<strong>[SMTP] Error!</strong> Internal server error!";
+$contact["sorry"] = "<strong>Sorry!</strong> You need to complete all mandatory (*) fields!";
+
+
 ?>

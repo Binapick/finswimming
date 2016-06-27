@@ -4,7 +4,7 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [26.06.2016 11:26:55] -->
+  <!-- phpDesigner :: Timestamp [27.06.2016 10:33:47] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -48,7 +48,7 @@ function HTML_Header(){
   return $z;
 }
 
-function HTML_Bottom(){
+function HTML_Bottom($mo = ""){
   $z = "
     		<!-- JAVASCRIPT FILES -->\n
     		<script type=\"text/javascript\">var plugin_path = 'assets/plugins/';</script>\n
@@ -60,8 +60,13 @@ function HTML_Bottom(){
     		<script type=\"text/javascript\" src=\"assets/js/revolution_slider.js\"></script>\n
 
         <!-- SCRIPTS -->
-        <script type=\"text/javascript\" src=\"assets/js/scripts.js\"></script>\n
-    		
+        <script type=\"text/javascript\" src=\"assets/js/scripts.js\"></script>\n";
+  if($mo == "con"){
+    $z .= "
+    		<!-- PAGELEVEL SCRIPTS -->
+    		<script type=\"text/javascript\" src=\"assets/js/contact.js\"></script>\n";
+  }
+  $z.= "  		
     	</body>\n
     </html>\n";
   return $z;
