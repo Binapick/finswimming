@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [27.06.2016 17:19:48] -->
+  <!-- phpDesigner :: Timestamp [28.06.2016 10:37:46] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -16,52 +16,46 @@ $z = "
 						
         <div class=\"col-md-3\">\n
           <!-- Footer Logo -->\n
-					<img class=\"footer-logo\" src=\"assets/images/logo-footer.png\" alt=\"\" />\n
+					<img class=\"footer-logo\" src=\"assets/images/tsvoe_cmas_logo.png\" alt=\"\" />\n
 
-							<!-- Small Description -->
-							<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+          <!-- Contact Address -->\n
+          <address>\n
+            <ul class=\"list-unstyled\">\n
+              <li class=\"footer-sprite address\">\n
+                Slamastra&szlig;e 23<br>
+								Obj. 3<br>
+								1230 Wien, Austria<br>
+              </li>\n
+  						<li class=\"footer-sprite phone\">\n
+  						  +43 664 466 2112\n
+  						</li>\n
+  						<li class=\"footer-sprite email\">\n
+  						  <a href=\"mailto:office@tsvoe.at\">office@tsvoe.at</a>\n
+  						</li>\n
+            </ul>\n
+          </address>\n
+          <!-- /Contact Address -->\n
+        </div>\n
 
-							<!-- Contact Address -->
-							<address>
-								<ul class=\"list-unstyled\">
-									<li class=\"footer-sprite address\">
-										PO Box 21132<br>
-										Here Weare St, Melbourne<br>
-										Vivas 2355 Australia<br>
-									</li>
-									<li class=\"footer-sprite phone\">
-										Phone: 1-800-565-2390
-									</li>
-									<li class=\"footer-sprite email\">
-										<a href=\"mailto:support@yourname.com\">support@yourname.com</a>
-									</li>
-								</ul>
-							</address>
-							<!-- /Contact Address -->
-
-						</div>
-
-						<div class=\"col-md-3\">
-
-							<!-- Latest Blog Post -->
-							<h4 class=\"letter-spacing-1\">LATEST NEWS</h4>
-							<ul class=\"footer-posts list-unstyled\">
-								<li>
-									<a href=\"#\">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
-									<small>29 June 2015</small>
-								</li>
-								<li>
-									<a href=\"#\">Nullam id dolor id nibh ultricies</a>
-									<small>29 June 2015</small>
-								</li>
-								<li>
-									<a href=\"#\">Duis mollis, est non commodo luctus</a>
-									<small>29 June 2015</small>
-								</li>
-							</ul>
-							<!-- /Latest Blog Post -->
-
-						</div>
+				<div class=\"col-md-3\">\n
+					<!-- a-timing.wien -->\n
+					<img class=\"footer-logo\" src=\"assets/images/a-timing_logo.png\" alt=\"\" />\n
+					<ul class=\"footer-posts list-unstyled\">
+						<li>
+							<a href=\"#\">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
+							<small>29 June 2015</small>
+						</li>
+						<li>
+							<a href=\"#\">Nullam id dolor id nibh ultricies</a>
+							<small>29 June 2015</small>
+						</li>
+						<li>
+							<a href=\"#\">Duis mollis, est non commodo luctus</a>
+							<small>29 June 2015</small>
+						</li>
+					</ul>
+					<!-- /Latest Blog Post -->
+				</div>
 
 						<div class=\"col-md-2\">
 
