@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [27.06.2016 16:55:23] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 10:50:22] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -12,12 +12,12 @@ $z = "
   <!-- PAGE HEADER -->\n
   <section class=\"page-header page-header-xs\">\n
     <div class=\"container\">\n
-      <h1>".$GLOBALS["top_bar_contact"]."</h1>\n
+      <h1>".$top_bar["contact"]."</h1>\n
       <!-- breadcrumbs -->\n
       <ol class=\"breadcrumb\">\n
 	      <li><a href=\"#\">Home</a></li>\n
 				<li><a href=\"#\">Pages</a></li>\n
-				<li class=\"active\">".$GLOBALS["top_bar_contact"]."</li>\n
+				<li class=\"active\">".$top_bar["contact"]."</li>\n
 			</ol><!-- /breadcrumbs -->\n
 		</div>\n
   </section>\n
@@ -49,7 +49,7 @@ $z .= "
 						.$contact["sorry"]."
 					</div><!-- /Alert Mandatory -->
 
-					<form action=\"assets/lib/php/contact.php?l=".$language."\" method=\"post\" enctype=\"multipart/form-data\">
+					<form action=\"assets/lib/php/contact.php?l=".$top_bar["set_language"]."\" method=\"post\" enctype=\"multipart/form-data\">
 				    <fieldset>
 						  <input type=\"hidden\" name=\"action\" value=\"contact_send\" />
 							<div class=\"row\">

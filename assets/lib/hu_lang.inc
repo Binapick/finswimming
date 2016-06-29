@@ -4,23 +4,28 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [27.06.2016 17:18:29] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 10:46:18] -->
   ------HoC------
  ----------------------------------------------------*/
 
-$top_bar_lang_en = "Angol";
-$top_bar_lang_de = "Német";
-$top_bar_lang_hu = "Magar";
-
-$top_bar_contact = "Érintkezés";
-$top_bar_welcome = "Üdvözöljük TSVOe Portál";
-$top_bar_account = "A fiókom";
-$top_bar_profile = "A profilom";
-$top_bar_logout = "Kijelentkezés";
-$top_bar_login = "Belépek";
-$top_bar_competition = "Saját esemény";
+$top_bar["lang_en"] = "Angol";
+$top_bar["lang_de"] = "Német";
+$top_bar["lang_hu"] = "Magar";
+$top_bar["contact"] = "Érintkezés";
+$top_bar["welcome"] = "Üdvözöljük TSVOe Portál";
+$top_bar["account"] = "A fiókom";
+$top_bar["profile"] = "A profilom";
+$top_bar["logout"] = "Kijelentkezés";
+$top_bar["login"] = "Belépek";
+$top_bar["competition"] = "Saját esemény ";
+$top_bar["register"] = "Regisztráció";
 
 $footer["copyright"] = "Minden jog fenntartva";
+$footer["subscribe"] = "Iratkozzon fel hírlevelünkre, hogy fontos hírek";
+$footer["sub_succsess"] = "Jegyzett! Köszönöm!";
+$footer["sub_email"] = "Írd be az email címed";
+$footer["sub_send"] = "Iratkozz fel";
+$footer["explore"] = "ellenőrizze a honlapon";
 
 $contact["header"] = "Írjon nekünk egy sort, vagy csak köszönni";
 $contact["fullname"] = "Teljes név";

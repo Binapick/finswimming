@@ -4,23 +4,29 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [27.06.2016 17:18:29] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 10:46:18] -->
   ------HoC------
  ----------------------------------------------------*/
 
-$top_bar_lang_en = "English";
-$top_bar_lang_de = "German";
-$top_bar_lang_hu = "Hungarian";
+$top_bar["lang_en"] = "English";
+$top_bar["lang_de"] = "German";
+$top_bar["lang_hu"] = "Hungarian";
+$top_bar["contact"] = "contact";
+$top_bar["welcome"] = "Welcome to TSVOe Portal";
+$top_bar["account"] = "My Account";
+$top_bar["profile"] = "My Profile";
+$top_bar["logout"] = "Logout";
+$top_bar["login"] = "Login";
+$top_bar["competition"] = "My event";
+$top_bar["register"] = "Register";
 
-$top_bar_contact = "contact";
-$top_bar_welcome = "Welcome to TSVOe Portal";
-$top_bar_account = "My Account";
-$top_bar_profile = "My Profile";
-$top_bar_logout = "Logout";
-$top_bar_login = "Login";
-$top_bar_competition = "My event";
 
 $footer["copyright"] = "All Rights Reserved";
+$footer["subscribe"] = "Subscribe to Our Newsletter to get Important News";
+$footer["sub_succsess"] = "Subscribed! Thank you!";
+$footer["sub_email"] = "Enter your Email";
+$footer["sub_send"] = "Subscribe";
+$footer["explore"] = "EXPLORE the WEBSITE";
 
 $contact["header"] = "Write us a line or just say <strong><em>Hello!</em></strong>";
 $contact["fullname"] = "Full Name";

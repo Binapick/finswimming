@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [26.06.2016 16:57:55] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 10:50:22] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -20,7 +20,7 @@ function getNavMain(){
   return $z;
 }
 
-function getTopBar($l="en"){
+function getTopBar($lang){
   $z = "
     <!-- Top Bar -->
 		<div id=\"topBar\">\n
@@ -28,49 +28,56 @@ function getTopBar($l="en"){
 
 				<!-- right -->\n
 				<ul class=\"top-links list-inline pull-right\">\n
-					<li class=\"text-welcome hidden-xs\">".$GLOBALS["top_bar_welcome"].", <strong>John Doe</strong></li>\n
+					<li class=\"text-welcome hidden-xs\">".$lang["welcome"].", <strong>John Doe</strong></li>\n
 					<li>
-						<a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><i class=\"fa fa-user hidden-xs\"></i> ".$GLOBALS["top_bar_account"]."</a>
+						<a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><i class=\"fa fa-user hidden-xs\"></i> ".$lang["account"]."</a>
 						<ul class=\"dropdown-menu pull-right\">
-							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-bookmark\"></i> ".$GLOBALS["top_bar_profile"]."</a></li>
-							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-edit\"></i> ".$GLOBALS["top_bar_competition"]."</a></li>
+							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-bookmark\"></i> ".$lang["profile"]."</a></li>
+							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-edit\"></i> ".$lang["competition"]."</a></li>
 							<li class=\"divider\"></li>
-							<li><a tabindex=\"-1\" href=\"#\"><i class=\"glyphicon glyphicon-off\"></i> ".$GLOBALS["top_bar_logout"]."</a></li>
+							<li><a tabindex=\"-1\" href=\"#\"><i class=\"glyphicon glyphicon-off\"></i> ".$lang["logout"]."</a></li>
 						</ul>
-					</li>
+					</li>";
+					
+// TODO: Login, Logout script          
+          
+  $z .= " <li><a href=\"index.php?l=".$lang["set_language"]."&mo=log\">".$lang["login"]."</a></li>
+					<li><a href=\"index.php?l=".$lang["set_language"]."&mo=log\">".$lang["register"]."</a></li>
+
+
 				</ul>
 
 					<!-- left -->
 					<ul class=\"top-links list-inline\">
-						<li class=\"hidden-xs\"><a href=\"index.php?l=".$l."&mo=con\">".$GLOBALS["top_bar_contact"]."</a></li>
+						<li class=\"hidden-xs\"><a href=\"index.php?l=".$lang["set_language"]."&mo=con\">".$lang["contact"]."</a></li>
 						<li>";
-  if($l == "en"){ 
+  if($lang["set_language"] == "en"){ 
     $z .= "
-      <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_en"]."</a>\n
+      <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a>\n
       <ul class=\"dropdown-langs dropdown-menu\">\n
-  			<li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_en"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
   			<li class=\"divider\"></li>
-  			<li><a tabindex=\"-1\" href=\"index.php?l=de\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_de"]."</a></li>\n
-  			<li><a tabindex=\"-1\" href=\"index.php?l=hu\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_hu"]."</a></li>\n";
+  			<li><a tabindex=\"-1\" href=\"index.php?l=de\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=hu\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
   }
-	elseif($l == "de") { 
+	elseif($lang["set_language"] == "de") { 
     $z .= "
-      <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_de"]."</a>				
+      <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a>				
 			<ul class=\"dropdown-langs dropdown-menu\">
-  			<li><a tabindex=\"-1\" href=\"index.php?l=en\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_en"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=en\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
   			<li class=\"divider\"></li>
-  			<li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_de"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
   			<li class=\"divider\"></li>
-        <li><a tabindex=\"-1\" href=\"index.php?l=hu\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_hu"]."</a></li>\n";
+        <li><a tabindex=\"-1\" href=\"index.php?l=hu\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
   }	
-	elseif($l == "hu") { 
+	elseif($lang["set_language"] == "hu") { 
     $z .= "
-      <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_hu"]."</a>				
+      <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a>				
 			<ul class=\"dropdown-langs dropdown-menu\">
-  			<li><a tabindex=\"-1\" href=\"index.php?l=en\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_en"]."</a></li>\n
-  			<li><a tabindex=\"-1\" href=\"index.php?l=de\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_de"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=en\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=de\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
   			<li class=\"divider\"></li>
-        <li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$GLOBALS["top_bar_lang_hu"]."</a></li>\n";
+        <li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
   }	
   $z .= "
 							</ul>
