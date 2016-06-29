@@ -4,9 +4,20 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 10:46:18] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 16:42:51] -->
   ------HoC------
  ----------------------------------------------------*/
+
+$secure["header"] = "Login/Register";
+$secure["return_user"] = "I'm a returning user";
+$secure["login_false"] = "Login Incorrect!";
+$secure["email_info"] = "Needed to verify your account";
+$secure["pass_info"] = "Type your account password";
+$secure["forgot_pw"] = "Forgot Password";
+$secure["login"] = "Login";
+$secure["no_account"] = "Don't have an account yet?";
+$secure["pw_failure"] = "Password do not match";
+
 
 $top_bar["lang_en"] = "English";
 $top_bar["lang_de"] = "German";
@@ -19,7 +30,6 @@ $top_bar["logout"] = "Logout";
 $top_bar["login"] = "Login";
 $top_bar["competition"] = "My event";
 $top_bar["register"] = "Register";
-
 
 $footer["copyright"] = "All Rights Reserved";
 $footer["subscribe"] = "Subscribe to Our Newsletter to get Important News";

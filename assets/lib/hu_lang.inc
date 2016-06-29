@@ -4,9 +4,20 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 10:46:18] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 16:42:51] -->
   ------HoC------
  ----------------------------------------------------*/
+
+$secure["header"] = "Belépek/Regisztráció";
+$secure["return_user"] = "Én egy visszatérő felhasználó";
+$secure["login_false"] = "Helytelen bejelentkezés!";
+$secure["email_info"] = "Ellenőrzéséhez szükséges fiókjába";
+$secure["pass_info"] = "Írja be a fiók jelszavát";
+$secure["forgot_pw"] = "Elfelejtett jelszó";
+$secure["login"] = "Belépek";
+$secure["no_account"] = "Nincs még egy fiókot?";
+$secure["pw_failure"] = "A jelszó nem egyezik";
+
 
 $top_bar["lang_en"] = "Angol";
 $top_bar["lang_de"] = "Német";

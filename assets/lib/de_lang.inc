@@ -4,9 +4,20 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 10:46:18] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 16:42:51] -->
   ------HoC------
  ----------------------------------------------------*/
+
+$secure["header"] = "Anmeldung/Registrieren";
+$secure["return_user"] = "Ich bin bereits User";
+$secure["login_false"] = "Login falsch!";
+$secure["email_info"] = "Erforderlich zum Anmelden";
+$secure["pass_info"] = "Passwort eingeben";
+$secure["forgot_pw"] = "Passwort vergessen";
+$secure["login"] = "Anmelden";
+$secure["no_account"] = "Sie haben noch kein Konto?";
+$secure["pw_failure"] = "Passwort stimmt nicht überein";
+
 
 $top_bar["lang_en"] = "Englisch";
 $top_bar["lang_de"] = "Deutsch";
@@ -16,7 +27,7 @@ $top_bar["welcome"] = "Willkommen im TSVÖ Portal";
 $top_bar["account"] = "Mein Konto";
 $top_bar["profile"] = "Mein Profil";
 $top_bar["logout"] = "Ausloggen";
-$top_bar["login"] = "Anmeldung";
+$top_bar["login"] = "Anmelden";
 $top_bar["competition"] = "Meine Veranstaltungen";
 $top_bar["register"] = "Registrieren";
 

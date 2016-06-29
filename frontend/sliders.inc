@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [26.06.2016 13:14:38] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 15:14:10] -->
   ------HoC------
  ----------------------------------------------------*/
 // TODO: setup to new slider revolution Version
@@ -85,7 +85,7 @@ function getRevolutionSlider(){
 								data-endspeed=\"1000\"
 								data-endeasing=\"Power4.easeIn\" style=\"z-index: 10;\">\n
 								<a href=\"#purchase\" class=\"btn btn-default btn-lg\">\n
-									<span>Purchase Smarty Now</span>\n
+									<span>Join Meeting Now</span>\n
 								</a>\n
 							</div>\n
 						</li>\n

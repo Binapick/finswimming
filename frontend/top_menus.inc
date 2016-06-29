@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 10:50:22] -->
+  <!-- phpDesigner :: Timestamp [29.06.2016 14:25:22] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -20,7 +20,7 @@ function getNavMain(){
   return $z;
 }
 
-function getTopBar($lang){
+function getTopBar($lang, $mo, $a = ""){
   $z = "
     <!-- Top Bar -->
 		<div id=\"topBar\">\n
@@ -35,14 +35,14 @@ function getTopBar($lang){
 							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-bookmark\"></i> ".$lang["profile"]."</a></li>
 							<li><a tabindex=\"-1\" href=\"#\"><i class=\"fa fa-edit\"></i> ".$lang["competition"]."</a></li>
 							<li class=\"divider\"></li>
-							<li><a tabindex=\"-1\" href=\"#\"><i class=\"glyphicon glyphicon-off\"></i> ".$lang["logout"]."</a></li>
+							<li><a tabindex=\"-1\" href=\"index.php?l=".$lang["set_language"]."&mo=sec&a=0\"><i class=\"glyphicon glyphicon-off\"></i> ".$lang["logout"]."</a></li>
 						</ul>
 					</li>";
 					
 // TODO: Login, Logout script          
           
-  $z .= " <li><a href=\"index.php?l=".$lang["set_language"]."&mo=log\">".$lang["login"]."</a></li>
-					<li><a href=\"index.php?l=".$lang["set_language"]."&mo=log\">".$lang["register"]."</a></li>
+  $z .= " <li><a href=\"index.php?l=".$lang["set_language"]."&mo=sec&a=1\">".$lang["login"]."</a></li>
+					<li><a href=\"index.php?l=".$lang["set_language"]."&mo=sec&a=10\">".$lang["register"]."</a></li>
 
 
 				</ul>
@@ -57,25 +57,25 @@ function getTopBar($lang){
       <ul class=\"dropdown-langs dropdown-menu\">\n
   			<li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
   			<li class=\"divider\"></li>
-  			<li><a tabindex=\"-1\" href=\"index.php?l=de\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
-  			<li><a tabindex=\"-1\" href=\"index.php?l=hu\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
+  			<li><a tabindex=\"-1\" href=\"index.php?l=de&mo=".$mo."&a=".$a."\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=hu&mo=".$mo."&a=".$a."\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
   }
 	elseif($lang["set_language"] == "de") { 
     $z .= "
       <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a>				
 			<ul class=\"dropdown-langs dropdown-menu\">
-  			<li><a tabindex=\"-1\" href=\"index.php?l=en\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=en&mo=".$mo."&a=".$a."\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
   			<li class=\"divider\"></li>
   			<li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
   			<li class=\"divider\"></li>
-        <li><a tabindex=\"-1\" href=\"index.php?l=hu\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
+        <li><a tabindex=\"-1\" href=\"index.php?l=hu&mo=".$mo."&a=".$a."\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
   }	
 	elseif($lang["set_language"] == "hu") { 
     $z .= "
       <a class=\"dropdown-toggle no-text-underline\" data-toggle=\"dropdown\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a>				
 			<ul class=\"dropdown-langs dropdown-menu\">
-  			<li><a tabindex=\"-1\" href=\"index.php?l=en\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
-  			<li><a tabindex=\"-1\" href=\"index.php?l=de\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=en&mo=".$mo."&a=".$a."\"><img class=\"flag-lang\" src=\"assets/images/flags/us.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_en"]."</a></li>\n
+  			<li><a tabindex=\"-1\" href=\"index.php?l=de&mo=".$mo."&a=".$a."\"><img class=\"flag-lang\" src=\"assets/images/flags/de.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_de"]."</a></li>\n
   			<li class=\"divider\"></li>
         <li><a tabindex=\"-1\" href=\"#\"><img class=\"flag-lang\" src=\"assets/images/flags/hu.png\" width=\"16\" height=\"11\" alt=\"lang\" /> ".$lang["lang_hu"]."</a></li>\n";
   }	
