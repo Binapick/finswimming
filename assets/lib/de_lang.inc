@@ -4,14 +4,14 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 16:42:51] -->
+  <!-- phpDesigner :: Timestamp [30.06.2016 10:21:26] -->
   ------HoC------
  ----------------------------------------------------*/
 
 $secure["header"] = "Anmeldung/Registrieren";
 $secure["return_user"] = "Ich bin bereits User";
 $secure["login_false"] = "Login falsch!";
-$secure["email_info"] = "Erforderlich zum Anmelden";
+$secure["user_info"] = "Erforderlich zum Anmelden";
 $secure["pass_info"] = "Passwort eingeben";
 $secure["forgot_pw"] = "Passwort vergessen";
 $secure["login"] = "Anmelden";

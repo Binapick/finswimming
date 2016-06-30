@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 16:42:51] -->
+  <!-- phpDesigner :: Timestamp [30.06.2016 10:32:44] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -64,28 +64,33 @@ function getForm($a, $secure){
             <div class=\"toggle".$l."\">\n
 						  <label class=\"size-20\"><i class=\"fa fa-leaf\"></i> &nbsp; ".$secure["return_user"]."</label>\n
 			        <div class=\"toggle-content\">\n
-							  <!-- ALERT -->
-								<div class=\"alert alert-mini alert-danger margin-bottom-30\">\n
+							  
+                <!-- ALERT -->
+								<!--
+                <div id=\"alert_mandatory\" class=\"alert alert-mini alert-danger margin-bottom-30\">\n
 			            <strong>Oh snap!</strong> ".$secure["login_false"]."
-								</div><!-- /ALERT -->\n
-								<form class=\"sky-form\" method=\"post\" action=\"#\" autocomplete=\"off\">\n
+								</div>
+                -->
+                <!-- /ALERT -->\n
+								
+                <form class=\"sky-form\" method=\"post\" action=\"#\" autocomplete=\"off\">\n
                   <div class=\"clearfix\">\n
-                    <!-- Email -->\n
+                    <!-- User -->\n
                     <div class=\"form-group\">\n
-                      <label>Email</label>\n
-                      <label class=\"input margin-bottom-10\">\n
+                      <label>User</label>\n
+                      <label class=\"input margin-bottom-10\" for=\"sec:user\">\n
                         <i class=\"ico-append fa fa-envelope\"></i>\n
-                        <input required=\"\" type=\"email\" autocomplete=\"off\">\n
-                        <b class=\"tooltip tooltip-top-right\">".$secure["email_info"]."</b>\n
+                        <input required=\"\" type=\"text\" name=\"sec[user][required]\" id=\"sec:user\">\n
+                        <b class=\"tooltip tooltip-top-right\">".$secure["user_info"]."</b>\n
                       </label>\n
                     </div>\n
                         
                     <!-- Password -->\n
                     <div class=\"form-group\">\n
                       <label>Password</label>\n
-                      <label class=\"input margin-bottom-10\">\n
+                      <label class=\"input margin-bottom-10\" for=\"sec:pwd\">\n
                         <i class=\"ico-append fa fa-lock\"></i>\n
-                        <input required=\"\" type=\"password\">\n
+                        <input required=\"\" type=\"password\" name=\"sec[pwd][required]\" id=\"sec:pwd\">\n
                         <b class=\"tooltip tooltip-top-right\">".$secure["pass_info"]."</b>\n
                       </label>\n
                     </div>\n
@@ -107,10 +112,14 @@ function getForm($a, $secure){
 						<div class=\"toggle".$r."\">\n
               <label class=\"size-20\"><i class=\"glyphicon glyphicon-user\"></i> &nbsp; ".$secure["no_account"]."</label>\n
               <div class=\"toggle-content\">\n
+                
                 <!-- ALERT -->\n
+                <!--
                 <div class=\"alert alert-mini alert-danger margin-bottom-30\">\n
                   <strong>Oh snap!</strong> ".$secure["pw_failure"]."!\n
-                </div><!-- /ALERT -->\n
+                </div>
+                -->
+                <!-- /ALERT -->\n
 
                 <form class=\"nomargin sky-form\" action=\"#\" method=\"post\" enctype=\"multipart/form-data\">\n
                   <fieldset>\n

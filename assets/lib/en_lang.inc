@@ -4,14 +4,14 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 16:42:51] -->
+  <!-- phpDesigner :: Timestamp [30.06.2016 10:21:26] -->
   ------HoC------
  ----------------------------------------------------*/
 
 $secure["header"] = "Login/Register";
 $secure["return_user"] = "I'm a returning user";
 $secure["login_false"] = "Login Incorrect!";
-$secure["email_info"] = "Needed to verify your account";
+$secure["user_info"] = "Needed to verify your account";
 $secure["pass_info"] = "Type your account password";
 $secure["forgot_pw"] = "Forgot Password";
 $secure["login"] = "Login";
