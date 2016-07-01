@@ -4,7 +4,7 @@
   belongs to : Maria DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   copyright 2016
-  <!-- phpDesigner :: Timestamp [29.06.2016 16:26:10] -->
+  <!-- phpDesigner :: Timestamp [01.07.2016 10:24:26] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -50,6 +50,9 @@ function HTML_Header(){
 
 function HTML_Bottom($mo = ""){
   $z = "
+		    <!-- SCROLL TO TOP -->\n
+		    <a href=\"#\" id=\"toTop\"></a>\n
+
     		<!-- JAVASCRIPT FILES -->\n
     		<script type=\"text/javascript\">var plugin_path = 'assets/plugins/';</script>\n
     		<script type=\"text/javascript\" src=\"assets/plugins/jquery/jquery-2.1.4.min.js\"></script>\n
