@@ -4,7 +4,7 @@
   belongs to : mysql DB
   contact    : Andreas Steiner   (astone@stoneship.at)
   @copyright 2016
-  <!-- phpDesigner :: Timestamp [01.07.2016 10:16:37] -->
+  <!-- phpDesigner :: Timestamp [01.07.2016 16:02:14] -->
   ------HoC------
  ----------------------------------------------------*/
 
@@ -45,7 +45,7 @@ $z = "
 						
             <div class=\"testimonial\">\n
 							<figure>\n
-								<img class=\"rounded\" src=\"assets/images/logo_tsvoe.png\" alt=\"\" />\n
+								<img class=\"\" src=\"assets/images/sportmin.jpg\" alt=\"\" />\n
 							</figure>\n
 							<div class=\"testimonial-content nopadding\">\n
 								<p>Antidopping Agentur Österreich</p>\n
@@ -58,7 +58,7 @@ $z = "
 
 						<div class=\"testimonial\">\n
 						  <figure>
-								<img class=\"rounded\" src=\"assets/images/a-timing_logo.png\" alt=\"\" />
+								<img class=\"\" src=\"assets/images/nada.jpg\" alt=\"\" />
 							</figure>
 							<div class=\"testimonial-content nopadding\">
                 <p>Quod necessitatibus quis expedita harum provident eos obcaecati id culpa.</p>
